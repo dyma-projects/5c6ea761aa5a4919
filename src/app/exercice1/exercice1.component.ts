@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exercice1Component implements OnInit {
 
-  constructor() { }
+  public day: string;
+  public colorBlue: string;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.day = 'Sunday';
+    this.colorBlue = '#1E88E5';
+  }
+
+  resetDay(): void {
+    this.ngOnInit();
+  }
+
+  changeDay(): void {
+    this.day = 'Monday';
   }
 
 }
